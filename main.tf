@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 2.12"
+      version = "3.0.0"
     }
   }
 }
@@ -15,6 +15,7 @@ provider "azurerm" {
   name     = "${var.prefix}-resources"
   location = var.location
 }
+
 
 
 
